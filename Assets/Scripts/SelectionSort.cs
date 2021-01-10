@@ -18,7 +18,7 @@ public class SelectionSort : SortManager
             min = i;
             for (int j = i + 1; j < array.Length; j++)
             {
-                if (array[j].haight < array[min].haight)
+                if (array[j].height < array[min].height)
                 {
                     min = j;
                 }

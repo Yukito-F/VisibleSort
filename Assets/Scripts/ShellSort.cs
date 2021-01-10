@@ -21,7 +21,7 @@ public class ShellSort : SortManager
             {
                 j = i;
                 temp = array[i];
-                while ((j >= increment) && (array[j - increment].haight > temp.haight))
+                while ((j >= increment) && (array[j - increment].height > temp.height))
                 {
                     array[j] = array[j - increment];
                     array[j].script.reflesh(j - increment);

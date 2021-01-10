@@ -11,30 +11,67 @@ public class HeapSort : SortManager
 
     IEnumerator heapSort(Barobj[] array)
     {
-        for (int heapEnd = array.Length - 1; heapEnd > 0; heapEnd--)
+        int heapEnd = array.Length - 1;
+        for (int root = heapEnd / 2 - 1; root >= 0; --root)
         {
-            for (int root = heapEnd / 2 - 1; root >= 0; root--)
+            int root_temp = root;
+            while (root_temp * 2 + 1 <= heapEnd)
             {
-                int leaf = 2 * root + 1;//left leaf
+                int leaf = 2 * root_temp + 1;//left leaf
 
-                if (leaf < heapEnd && array[leaf].haight < array[leaf + 1].haight)
+                if (leaf < heapEnd && array[leaf].height < array[leaf + 1].height)
                 {
                     leaf++;
                 }
 
-                if (array[root].haight < array[leaf].haight)
+                if (array[root_temp].height < array[leaf].height)
                 {
-                    (array[root], array[leaf]) = (array[leaf], array[root]);
-                    array[root].script.reflesh(root);
+                    (array[root_temp], array[leaf]) = (array[leaf], array[root_temp]);
+                    array[root_temp].script.reflesh(root_temp);
                     array[leaf].script.reflesh(leaf);
+                    root_temp = leaf;
                     yield return null;
                 }
+                else
+                {
+                    break;
+                }
             }
+        }
 
+
+        while (heapEnd >= 1)
+        {
             (array[0], array[heapEnd]) = (array[heapEnd], array[0]);
             array[0].script.reflesh(0);
             array[heapEnd].script.reflesh(heapEnd);
             yield return null;
+
+            heapEnd--;
+
+            int root_temp = 0;
+            while (root_temp * 2 < heapEnd)
+            {
+                int leaf = 2 * root_temp + 1;//left leaf
+
+                if (leaf < heapEnd && array[leaf].height < array[leaf + 1].height)
+                {
+                    leaf++;
+                }
+
+                if (array[root_temp].height < array[leaf].height)
+                {
+                    (array[root_temp], array[leaf]) = (array[leaf], array[root_temp]);
+                    array[root_temp].script.reflesh(root_temp);
+                    array[leaf].script.reflesh(leaf);
+                    root_temp = leaf;
+                    yield return null;
+                }
+                else
+                {
+                    break;
+                }
+            }
         }
     }
 }

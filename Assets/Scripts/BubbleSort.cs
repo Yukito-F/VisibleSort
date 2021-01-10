@@ -15,7 +15,7 @@ public class BubbleSort: SortManager
         {
             for (int j = 0; j < array.Length - 1 - i; j++)
             {
-                if (array[j].haight > array[j + 1].haight)
+                if (array[j].height > array[j + 1].height)
                 {
                     (array[j], array[j + 1]) = (array[j + 1], array[j]);
                     array[j].script.reflesh(j);

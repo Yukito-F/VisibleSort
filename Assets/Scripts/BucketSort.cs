@@ -21,15 +21,15 @@ public class BucketSort : SortManager
 
         for (int i = 0; i < array.Length; i++)
         {
-            buckets[array[i].haight] = array[i];
+            buckets[array[i].height] = array[i];
         }
 
         int j = 0;
         for (int i = 0; i < range; i++)
         {
-            if (0 < buckets[i].haight)
+            if (0 < buckets[i].height)
             {
-                //array[j].script.reflesh(array[j].haight);
+                //array[j].script.reflesh(array[j].height);
                 array[j] = buckets[i];
                 array[j].script.reflesh(i);
                 j++;
