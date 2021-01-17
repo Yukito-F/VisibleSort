@@ -62,14 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Adapter.cs" />
     <Compile Include="Assets\Scripts\Bar.cs" />
-    <Compile Include="Assets\Scripts\BubbleSort.cs" />
-    <Compile Include="Assets\Scripts\BucketSort.cs" />
-    <Compile Include="Assets\Scripts\HeapSort.cs" />
-    <Compile Include="Assets\Scripts\InsertionSort.cs" />
-    <Compile Include="Assets\Scripts\SelectionSort.cs" />
-    <Compile Include="Assets\Scripts\ShellSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\BubbleSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\BucketSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\HeapSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\InsertSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\MergeSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\SelectSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\ShellSort.cs" />
     <Compile Include="Assets\Scripts\SortManager.cs" />
     <Compile Include="Assets\Scripts\SortSelector.cs" />
     <Compile Include="Assets\UnityCapture\UnityCapture.cs" />

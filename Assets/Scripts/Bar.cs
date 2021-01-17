@@ -2,7 +2,7 @@
 
 public class Bar : MonoBehaviour
 {
-    public void reflesh(int target)
+    public void refresh(int target)
     {
         Vector3 tempVector = transform.position;
         tempVector.x = target;
