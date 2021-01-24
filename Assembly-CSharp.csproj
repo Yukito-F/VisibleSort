@@ -68,6 +68,7 @@
     <Compile Include="Assets\Scripts\Sort\HeapSort.cs" />
     <Compile Include="Assets\Scripts\Sort\InsertSort.cs" />
     <Compile Include="Assets\Scripts\Sort\MergeSort.cs" />
+    <Compile Include="Assets\Scripts\Sort\QuickSort.cs" />
     <Compile Include="Assets\Scripts\Sort\SelectSort.cs" />
     <Compile Include="Assets\Scripts\Sort\ShellSort.cs" />
     <Compile Include="Assets\Scripts\SortManager.cs" />
