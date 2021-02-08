@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Sort\ShellSort.cs" />
     <Compile Include="Assets\Scripts\SortManager.cs" />
     <Compile Include="Assets\Scripts\SortSelector.cs" />
+    <Compile Include="Assets\Scripts\SoundTest.cs" />
     <Compile Include="Assets\UnityCapture\UnityCapture.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

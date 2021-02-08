@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8395014004247513082}
   - component: {fileID: 4219100663569958916}
+  - component: {fileID: -5490982940188075093}
   m_Layer: 0
   m_Name: QuickSort
   m_TagString: Untagged
@@ -44,3 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneCount: 500
+  gain: 1.5
+  nowPlaying: 0
+--- !u!81 &-5490982940188075093
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759373645022089551}
+  m_Enabled: 1

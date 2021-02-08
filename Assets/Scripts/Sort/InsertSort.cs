@@ -18,9 +18,11 @@ public class InsertSort : SortManager
                 (array[j], array[j - 1]) = (array[j - 1], array[j]);
                 array[j].script.refresh(j);
                 array[j - 1].script.refresh(j - 1);
+                playSound(array[j].height);
                 yield return null;
             }
             //yield return null;
         }
+        nowPlaying = false;
     }
 }

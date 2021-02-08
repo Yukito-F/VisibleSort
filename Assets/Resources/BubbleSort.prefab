@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3026330271905883506}
   - component: {fileID: 3026330271905883508}
+  - component: {fileID: -2819599024364455937}
   m_Layer: 0
   m_Name: BubbleSort
   m_TagString: Untagged
@@ -44,3 +45,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloneCount: 100
+--- !u!81 &-2819599024364455937
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3026330271905883507}
+  m_Enabled: 1

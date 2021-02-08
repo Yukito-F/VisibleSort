@@ -12,6 +12,7 @@ public class QuickSort : SortManager
     IEnumerator quickSort(Barobj[] array)
     {
         yield return sort(array, 0, array.Length - 1);
+        nowPlaying = false;
     }
 
     IEnumerator sort(Barobj[] array, int left, int right)
@@ -27,6 +28,7 @@ public class QuickSort : SortManager
             if (i >= j) break;
             (array[i], array[j]) = (array[j], array[i]);
             array[i].script.refresh(i);
+            playSound(array[i].height);
             array[j].script.refresh(j);
             yield return null;
             i++;
